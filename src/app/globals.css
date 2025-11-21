@@ -1,0 +1,129 @@
+@import "@fontsource/geist-sans/index.css";
+@import "@fontsource/geist-mono/index.css";
+@import "@fontsource/inter/index.css";
+@import "@fontsource/roboto/index.css";
+@import "@fontsource/fira-code/index.css";
+@import "@fontsource/jetbrains-mono/index.css";
+
+@import "tailwindcss";
+
+@theme {
+  /* Cores principais */
+  --color-primary: oklch(0.7 0.2 270);
+  --color-secondary: oklch(0.6 0.15 300);
+  --color-accent: oklch(0.75 0.25 330);
+  
+  /* Backgrounds */
+  --color-background: oklch(0.98 0.01 270);
+  --color-surface: oklch(0.95 0.02 270);
+  
+  /* Textos */
+  --color-text-primary: oklch(0.2 0.02 270);
+  --color-text-secondary: oklch(0.4 0.03 270);
+  --color-text-muted: oklch(0.6 0.02 270);
+  
+  /* Estados */
+  --color-success: oklch(0.7 0.15 140);
+  --color-warning: oklch(0.75 0.15 60);
+  --color-error: oklch(0.6 0.2 20);
+  --color-info: oklch(0.65 0.15 240);
+  
+  /* Borders */
+  --color-border: oklch(0.85 0.02 270);
+  --color-border-hover: oklch(0.75 0.03 270);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Fonts */
+  --font-sans: "Geist Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", "Fira Code", "JetBrains Mono", monospace;
+  --font-display: "Inter", "Geist Sans", system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Supabase Auth UI Custom Styles */
+.auth-container {
+  width: 100%;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: rgba(168, 85, 247, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Utility classes */
+.font-geist-sans {
+  font-family: "Geist Sans", system-ui, sans-serif;
+}
+
+.font-geist-mono {
+  font-family: "Geist Mono", monospace;
+}
+
+.font-inter {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", system-ui, sans-serif;
+}
+
+.font-fira-code {
+  font-family: "Fira Code", monospace;
+}
+
+.font-jetbrains {
+  font-family: "JetBrains Mono", monospace;
+}
